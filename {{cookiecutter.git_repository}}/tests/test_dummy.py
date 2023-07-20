@@ -3,7 +3,7 @@ from typing import Any
 
 import pytest
 
-from {{python_package}}.dummy import identity
+from {{cookiecutter.python_package}}.dummy import identity
 
 
 @pytest.mark.parametrize("var", [1, "Azerty", True, print])

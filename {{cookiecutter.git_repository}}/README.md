@@ -1,11 +1,11 @@
-# {{git_repository}}
+# {{cookiecutter.git_repository}}
 
-My python template for {{python_package}}.
+My python template for {{cookiecutter.python_package}}.
 
 ## Installation
 
 ```bash
-$ cd /path/to/{{git_repository}}
+$ cd /path/to/{{cookiecutter.git_repository}}
 $ # install venv
 $ python -m venv venv
 $ source ./venv/bin/activate

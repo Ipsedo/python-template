@@ -5,7 +5,7 @@ from .dummy import identity
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser("{{python_package}} main")
+    parser = argparse.ArgumentParser("{{cookiecutter.python_package}} main")
 
     parser.add_argument("message", type=str, help="The message to display")
 
