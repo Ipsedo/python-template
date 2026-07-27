@@ -6,11 +6,8 @@ My python template for {{cookiecutter.python_package}}.
 
 ```bash
 $ cd /path/to/{{cookiecutter.git_repository}}
-$ # install venv
-$ python -m venv venv
-$ source ./venv/bin/activate
-$ # install requirements
-$ pip install -r requirements.txt
+$ # install dependencies with UV
+$ uv sync
 $ # install pre-commit (needs "git init" command)
 $ pre-commit install
 ```

@@ -1,3 +1,28 @@
+[build-system]
+requires = ["uv_build>=0.11.32,<0.12"]
+build-backend = "uv_build"
+
+[project]
+name = "{{cookiecutter.python_package.replace('_', '-')}}"
+version = "1.0.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+  {name = "{{cookiecutter.author}}"},
+]
+requires-python = ">=3.14"
+dependencies = [
+    "mypy>=2.3.0",
+    "pre-commit>=4.6.1",
+    "pylint>=4.0.6",
+    "pytest>=9.1.1",
+    "setuptools>=83.0.0",
+]
+
+[tool.uv.build-backend]
+module-name = "{{cookiecutter.python_package}}"
+module-root = ""
+
 [tool.black]
 line-length = 79
 
